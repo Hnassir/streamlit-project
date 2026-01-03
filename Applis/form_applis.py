@@ -57,7 +57,7 @@ for col in catg_cols:
 
 #======================
 
-clf=joblib.load("../models/decisiontree.pkl")
+clf=joblib.load("../expressoProject/models/decisiontree.pkl")
 
 res=clf.predict(new_data)
 
