@@ -3,6 +3,8 @@ import joblib
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
+#from decisiontree import decisiontree
+
 
 #========================================
 
@@ -58,6 +60,8 @@ for col in catg_cols:
 #======================
 
 clf=joblib.load("decisiontree.pkl",mmap_mode='r+')
+
+#clf=decisiontree()
 
 res=clf.predict(new_data)
 
